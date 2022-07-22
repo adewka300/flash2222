@@ -1,9 +1,10 @@
 # №3
 m1 = [''] + [oct(x)[2:] for x in range(0, 200)]
-m2 = ['000'] + ['0' + str(x) for x in range(0, 100)] + \
-     [str(x) for x in range(0, 1000)]
+m2 = ['0' + str(x) for x in range(0, 100)] + \
+     [str(x) for x in range(0, 1000)] + \
+     ['00' + str(x) for x in range(0, 10)]
 mas = []
-
+print(m2)
 for i in m1:
     for j in m2:
         m = '123#4%5'.replace('#', i).replace('%', j)
