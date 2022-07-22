@@ -1,7 +1,7 @@
 # №3
 m1 = [''] + [oct(x)[2:] for x in range(0, 200)]
-m2 = ['0' + str(x) for x in range(0, 100)] + \
-     [str(x) for x in range(0, 1000)] + \
+m2 = [str(x) for x in range(0, 1000)] + \
+     ['0' + str(x) for x in range(0, 100)] + \
      ['00' + str(x) for x in range(0, 10)]
 mas = []
 print(m2)
