@@ -1,5 +1,6 @@
+# №3
 m1 = [''] + [oct(x)[2:] for x in range(0, 200)]
-m2 = ['0' + str(x) for x in range(0, 100)] + \
+m2 = ['000'] + ['0' + str(x) for x in range(0, 100)] + \
      [str(x) for x in range(0, 1000)]
 mas = []
 
