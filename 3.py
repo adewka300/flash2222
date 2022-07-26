@@ -1,16 +1,17 @@
 # №3
-m1 = [''] + [oct(x)[2:] for x in range(0, 200)]
-m2 = [str(x) for x in range(0, 1000)] + \
-     ['0' + str(x) for x in range(0, 100)] + \
-     ['00' + str(x) for x in range(0, 10)]
-mas = []
-print(m2)
-for i in m1:
-    for j in m2:
-        m = '123#4%5'.replace('#', i).replace('%', j)
-        if int(m) < 10 ** 8 and int(m) % 333 == 0:
-            mas.append(int(m))
+def f(n):
+    if str(n) == str(n)[::-1]:
+        return True
+    else:
+        return False
 
-mas = sorted(mas)
-for a in mas:
-    print(a, a // 333)
+for i in range(19210100, 19232111 + 1):
+    divs = set()
+    for d in range(2, int(i ** 0.5) + 1):
+        if i % d == 0:
+            if f(d):
+                divs.add(d)
+            if f(i // d):
+                divs.add(i // d)
+    if len(divs) > 0 and len(divs) % 22 == 0:
+        print(i)
