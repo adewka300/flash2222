@@ -7,4 +7,4 @@ for i in range(8_666_266_66, 8_666_333_33 + 1):
                 divs.add(d)
                 divs.add(i // d)
         if len(divs) == 222:
-            print(i)
+            print(i, max(divs) + min(divs))
