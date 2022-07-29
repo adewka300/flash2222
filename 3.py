@@ -14,4 +14,4 @@ for i in range(19210100, 19232111 + 1):
             if f(i // d):
                 divs.add(i // d)
     if len(divs) > 0 and len(divs) % 22 == 0:
-        print(i)
+        print(i, max(divs))
