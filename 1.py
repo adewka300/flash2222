@@ -14,4 +14,4 @@ for i in range(300, 500 + 1):
             if f(i // d):
                 primed.add(i // d)
     if len(primed) == 4:
-        print(i)
+        print(i, max(primed))
