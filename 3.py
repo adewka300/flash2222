@@ -5,7 +5,7 @@ def f(n):
     else:
         return False
 
-for i in range(19210100, 19232111 + 1):
+for i in range(19210100, 19225525 + 1):
     divs = set()
     for d in range(2, int(i ** 0.5) + 1):
         if i % d == 0:
